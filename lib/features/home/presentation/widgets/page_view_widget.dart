@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../Constants/Routes.dart';
-import '../Constants/SizeConfig/Size_Config.dart';
-import '../Constants/StringsAllProject.dart';
+import '../../../../core/Constants/SizeConfig/Size_Config.dart';
+import '../../../../core/Constants/StringsAllProject.dart';
 
 Widget pageViewWidget(PageController controller) {
   return Positioned(

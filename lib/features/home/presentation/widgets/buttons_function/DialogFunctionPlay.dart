@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:task_design2/Constants/SizeConfig/Dimensions.dart';
-import 'package:task_design2/Constants/SizeConfig/Size_Config.dart';
-import 'package:task_design2/Constants/SizeConfig/Space%20Widgets.dart';
-import 'package:task_design2/Constants/StringsAllProject.dart';
 
-import '../../Constants/Colors.dart';
-import '../../Constants/FontFamilyConstants.dart';
-import '../../Constants/My Icons.dart';
-import '../../Constants/Shared Widgets/Text Widget.dart';
-import '../../Constants/SizeConfig/FontSizeConstants.dart';
+import '../../../../../core/Constants/Colors.dart';
+import '../../../../../core/Constants/FontFamilyConstants.dart';
+import '../../../../../core/Constants/Shared Widgets/Text Widget.dart';
+import '../../../../../core/Constants/SizeConfig/Dimensions.dart';
+import '../../../../../core/Constants/SizeConfig/FontSizeConstants.dart';
+import '../../../../../core/Constants/SizeConfig/Size_Config.dart';
+import '../../../../../core/Constants/SizeConfig/Space Widgets.dart';
+import '../../../../../core/Constants/StringsAllProject.dart';
+
+
 
 Future showDialogFunctionPlay(BuildContext context) {
   return showDialog(

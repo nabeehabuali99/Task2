@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../GreatTafseers/GreatTafseers.dart';
+import '../../features/home/presentation/pages/great_tafseers.dart';
+
+
 
 const String greateTafsserHome = 'GreateTafsserHome';
 

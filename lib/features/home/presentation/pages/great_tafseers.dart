@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:task_design2/Constants/PathImageConstants.dart';
-import 'package:task_design2/Constants/SizeConfig/Dimensions.dart';
-import 'package:task_design2/Constants/SizeConfig/FontSizeConstants.dart';
-import 'package:task_design2/Constants/SizeConfig/IconSizeConstants.dart';
-import 'package:task_design2/Constants/SizeConfig/Size_Config.dart';
 
+
+import '../../../../core/Constants/PathImageConstants.dart';
+import '../../../../core/Constants/SizeConfig/Dimensions.dart';
+import '../../../../core/Constants/SizeConfig/FontSizeConstants.dart';
+import '../../../../core/Constants/SizeConfig/IconSizeConstants.dart';
+import '../../../../core/Constants/SizeConfig/Size_Config.dart';
 import '../Widgets/ButtonsFunction/DialogFunctionMark.dart';
-import '../Widgets/ButtonsWidget.dart';
 import '../Widgets/ButtonsFunction/DialogFunctionPlay.dart';
-import '../Widgets/PageViewWidget.dart';
+import '../Widgets/buttons_widget.dart';
+import '../Widgets/page_view_widget.dart';
 import '../Widgets/Positioned Widgets.dart';
 
 class GreateTafsserHome extends StatefulWidget {

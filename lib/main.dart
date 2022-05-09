@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'GreatTafseers/SpashScreen.dart';
-import 'package:task_design2/Constants/Routes.dart' as route;
+import 'features/home/presentation/pages/spash_Screen.dart';
+import 'package:task_design2/core/Constants/Routes.dart' as route;
 
 void main() {
   runApp(const MyApp());

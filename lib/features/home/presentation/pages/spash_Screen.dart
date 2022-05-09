@@ -1,9 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:task_design2/Constants/PathImageConstants.dart';
-import 'package:task_design2/Constants/SizeConfig/Size_Config.dart';
-import 'package:task_design2/Constants/Routes.dart' as route;
+
+import 'package:task_design2/core/Constants/Routes.dart' as route;
+
+import '../../../../core/Constants/PathImageConstants.dart';
+import '../../../../core/Constants/SizeConfig/Size_Config.dart';
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
