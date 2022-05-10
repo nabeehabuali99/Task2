@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'features/home/presentation/pages/spash_Screen.dart';
 import 'package:task_design2/core/Constants/Routes.dart' as route;
+import 'injection_container.dart' as di;
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
   runApp(const MyApp());
 }
 
@@ -14,9 +18,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      onGenerateRoute: route.controller,
-      debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-    );
+        onGenerateRoute: route.controller,
+        debugShowCheckedModeBanner: false,
+        home: SplashScreen(),
+      )
+    ;
   }
 }

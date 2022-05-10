@@ -4,7 +4,7 @@ class HomeModel extends Home {
   const HomeModel(
       {required String nameOfSora,
       required String partOfSora,
-      required String numberOfPage,
+      required int numberOfPage,
       required String imageOfSora})
       : super(
             nameOfSora: nameOfSora,

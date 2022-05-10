@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 class Home extends Equatable {
   final String nameOfSora;
   final String partOfSora;
-  final String numberOfPage;
+  final int numberOfPage;
   final String imageOfSora;
 
   const Home(

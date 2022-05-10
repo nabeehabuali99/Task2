@@ -17,7 +17,7 @@ class ViewPageStateLoading extends HomeState {
 class ViewPageStateLoaded extends HomeState {
   final Home home;
 
-  ViewPageStateLoaded(this.home);
+  ViewPageStateLoaded({required this.home});
 
   @override
   // TODO: implement props
@@ -26,7 +26,7 @@ class ViewPageStateLoaded extends HomeState {
 class ViewPageStateError extends HomeState {
   final String message;
 
-  ViewPageStateError(this.message);
+  ViewPageStateError({required this.message});
   @override
   // TODO: implement props
   List<Object?> get props =>  [message];

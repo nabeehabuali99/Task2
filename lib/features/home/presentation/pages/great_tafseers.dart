@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/Constants/PathImageConstants.dart';
 import '../../../../core/Constants/SizeConfig/Dimensions.dart';
 import '../../../../core/Constants/SizeConfig/FontSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/IconSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/Size_Config.dart';
-import '../Widgets/ButtonsFunction/DialogFunctionMark.dart';
-import '../Widgets/ButtonsFunction/DialogFunctionPlay.dart';
+import '../../../../injection_container.dart';
 import '../Widgets/buttons_widget.dart';
 import '../Widgets/page_view_widget.dart';
 import '../Widgets/Positioned Widgets.dart';
+import '../bloc/home_bloc.dart';
+import '../widgets/buttons_function/DialogFunctionMark.dart';
+import '../widgets/buttons_function/DialogFunctionPlay.dart';
+import '../widgets/page_view_action.dart';
+import '../widgets/page_view_widget.dart';
 
 class GreateTafsserHome extends StatefulWidget {
   const GreateTafsserHome({Key? key}) : super(key: key);
@@ -26,10 +30,7 @@ class _GreateTafsserHomeState extends State<GreateTafsserHome> {
     FontSizeConstants().init(context);
     IconSizeConstants().init(context);
     DimensionsConstants().init(context);
-    final PageController controller = PageController(
-      initialPage: 3,
-    );
-
+    final PageController controller = PageController(initialPage: 3);
     return Scaffold(
       body: Stack(
         children: [
@@ -98,7 +99,20 @@ class _GreateTafsserHomeState extends State<GreateTafsserHome> {
               ),
             ),
           ),
-          pageViewWidget(controller),
+          BlocProvider(
+            create: (BuildContext context) => sl<HomeBloc>(),
+            child: BlocBuilder<HomeBloc, HomeState>(
+              builder: (context, state) {
+                if (state is ViewPageInitial) {
+                  return   pageViewWid(controller);
+                } else if (state is ViewPageStateLoaded) {
+                  return const Text("message");
+                } else {
+                  return const Text("message");
+                }
+              },
+            ),
+          ),
           positionWidget(
               SizeConfig.screenHeight! * 0.1,
               SizeConfig.screenWidth! * 0.55,

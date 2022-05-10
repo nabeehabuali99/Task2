@@ -6,22 +6,17 @@ import 'package:task_design2/features/home/domin/entities/home_entities.dart';
 
 import '../repository/home_repository.dart';
 
-class SwipePageViewUsecase  extends UseCase<Home,ParamsForSwipePageView>{
-
+class SwipePageViewUsecase extends UseCase<Home, ParamsForSwipePageView> {
   final HomeRepository repository;
 
   SwipePageViewUsecase(this.repository);
 
   @override
-  Future<Either<Failure, Home>> call(ParamsForSwipePageView params) {
-    // TODO: implement call
-    throw UnimplementedError();
+  Future<Either<Failure, Home>> call(ParamsForSwipePageView params) async  {
+   return   await repository.pageViewSwipe(params.index);
   }
-
-
-
-
 }
+
 class ParamsForSwipePageView extends Equatable {
   final int index;
 
@@ -31,4 +26,3 @@ class ParamsForSwipePageView extends Equatable {
   // TODO: implement props
   List<Object?> get props => [index];
 }
-

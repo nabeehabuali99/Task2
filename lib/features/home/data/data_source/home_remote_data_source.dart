@@ -3,7 +3,7 @@ abstract class  HomeRemoteDataSource{
 }
 
 
-class NumberTriviaRemoteDataSourceImplementation implements HomeRemoteDataSource{
+class HomeRemoteDataSourceImplementation implements HomeRemoteDataSource{
 
 
 }

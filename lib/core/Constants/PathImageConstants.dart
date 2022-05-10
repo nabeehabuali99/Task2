@@ -51,11 +51,10 @@ class PathConstants {
   static const SORA26 = 'assets/images/Sora026.png';
   static const SORA37 = 'assets/images/Sora037.png';
 
-  Map informationOfPages  = {
-    321: {"Page" : PAGE321, "sora" :SORA20, "joza":JOZA016 },
-    325: {"Page" : PAGE325, "sora" :SORA21, "joza":JOZA017 },
-    367: {"Page" : PAGE367, "sora" :SORA26,"joza": JOZA019 },
-    452: {"Page" : PAGE452,"sora" :SORA37, "joza":JOZA023 }
-  } ;
-
+  static List informationOfPages = [
+    {"imageOfSora": PAGE321, "nameOfSora": SORA20, "partOfSora": JOZA016,'numberOfPage' :321},
+    {"imageOfSora": PAGE325, "nameOfSora": SORA21, "partOfSora": JOZA017, 'numberOfPage':325},
+    {"imageOfSora": PAGE367, "nameOfSora": SORA26, "partOfSora": JOZA019, 'numberOfPage':367},
+    {"imageOfSora": PAGE452, "nameOfSora": SORA37, "partOfSora": JOZA023, 'numberOfPage':452}
+];
 }
