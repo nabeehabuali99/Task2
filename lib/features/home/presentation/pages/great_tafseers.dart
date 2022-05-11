@@ -8,13 +8,11 @@ import '../../../../core/Constants/SizeConfig/IconSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/Size_Config.dart';
 import '../../../../injection_container.dart';
 import '../Widgets/buttons_widget.dart';
-import '../Widgets/page_view_widget.dart';
-import '../Widgets/Positioned Widgets.dart';
+ import '../Widgets/Positioned Widgets.dart';
 import '../bloc/home_bloc.dart';
 import '../widgets/buttons_function/DialogFunctionMark.dart';
 import '../widgets/buttons_function/DialogFunctionPlay.dart';
 import '../widgets/page_view_action.dart';
-import '../widgets/page_view_widget.dart';
 
 class GreateTafsserHome extends StatefulWidget {
   const GreateTafsserHome({Key? key}) : super(key: key);
