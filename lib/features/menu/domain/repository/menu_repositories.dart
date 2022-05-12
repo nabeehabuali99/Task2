@@ -12,5 +12,7 @@
 
     Future<Either<Failure, List<Menu>>> getNameOfSoraBySearch(String nameOfSora);
 
-    Future<Either<Failure, Menu>> getNumberOfSoraPageBySearch(int numberOfPage);
+    Future<Either<Failure, void>> getNumberOfSoraPageBySearch(int numberOfPage);
+    Future<Either<Failure, void>> getSuitableSora(int numberOfSora);
+    Future<Either<Failure, void>> getSuitablePart(int numberOfPart);
   }

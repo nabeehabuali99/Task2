@@ -8,9 +8,9 @@ abstract class ProfileRepository {
 
   Future<Either<Failure, void>> removeOneOfListAya(int indexOfListAya);
 
-  Future<Either<Failure, Profile>> addNewOneListOfAya(String nameOfList);
+  Future<Either<Failure, void>> addNewOneListOfAya(String nameOfList);
 
-  Future<Either<Failure, Profile>> addNewOneListOfSearch(String nameOfSearch);
+  Future<Either<Failure, void>> addNewOneListOfSearch(String nameOfSearch);
 
   Future<Either<Failure, List<Profile>>> getAllListOfSearch();
 

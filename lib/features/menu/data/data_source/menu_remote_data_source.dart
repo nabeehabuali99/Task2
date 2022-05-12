@@ -2,46 +2,46 @@ import '../model/menu_model.dart';
 import 'package:http/http.dart' as http;
 
 abstract class MenuRemoteDataSource {
-  Future<List<MenuModel>> getNameOfPartBySearch(String nameOfPart);
+  Future<List<MenuModel>> getNameOfPartBySearchRemote(String nameOfPart);
 
-  Future<List<MenuModel>> getNameOfSoraBySearch(String nameOfSora);
+  Future<List<MenuModel>> getNameOfSoraBySearchRemote(String nameOfSora);
 
-  Future<MenuModel> getNumberOfSoraPageBySearch(int numberOfPage);
+  Future<void> getNumberOfSoraPageBySearchRemote(int numberOfPage);
 
-  Future<List<MenuModel>> getAllListNameOfParts();
+  Future<List<MenuModel>> getAllListNameOfPartsRemote();
 
-  Future<List<MenuModel>> getAllListNameOfSora();
+  Future<List<MenuModel>> getAllListNameOfSoraRemote();
 }
 
 class MenuRemoteDataSourceImplementation implements MenuRemoteDataSource {
   late final http.Client client;
 
   @override
-  Future<List<MenuModel>> getNameOfPartBySearch(String nameOfPart) {
+  Future<List<MenuModel>> getNameOfPartBySearchRemote(String nameOfPart) {
     // TODO: implement getNameOfPartBySearch
     throw UnimplementedError();
   }
 
   @override
-  Future<List<MenuModel>> getNameOfSoraBySearch(String nameOfSora) {
+  Future<List<MenuModel>> getNameOfSoraBySearchRemote(String nameOfSora) {
     // TODO: implement getNameOfSoraBySearch
     throw UnimplementedError();
   }
 
   @override
-  Future<MenuModel> getNumberOfSoraPageBySearch(int numberOfPage) {
+  Future<void> getNumberOfSoraPageBySearchRemote(int numberOfPage) {
     // TODO: implement getNumberOfSoraPageBySearch
     throw UnimplementedError();
   }
 
   @override
-  Future<List<MenuModel>> getAllListNameOfParts() {
+  Future<List<MenuModel>> getAllListNameOfPartsRemote() {
     // TODO: implement getAllListNameOfParts
     throw UnimplementedError();
   }
 
   @override
-  Future<List<MenuModel>> getAllListNameOfSora() {
+  Future<List<MenuModel>> getAllListNameOfSoraRemote() {
     // TODO: implement getAllListNameOfSora
     throw UnimplementedError();
   }

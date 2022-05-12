@@ -6,12 +6,12 @@ import '../../../../core/usecases/usecase.dart';
 import '../entities/menu.dart';
 import '../repository/menu_repositories.dart';
 
-class GetNumberOfSoraPageBySearch implements UseCase<Menu, ParamsForSearchByNumberOfSoraPage> {
+class GetNumberOfSoraPageBySearch implements UseCase<void, ParamsForSearchByNumberOfSoraPage> {
    final MenuRepository repository;
 
    GetNumberOfSoraPageBySearch(this.repository);
   @override
-  Future<Either<Failure, Menu>> call(ParamsForSearchByNumberOfSoraPage params) async {
+  Future<Either<Failure, void>> call(ParamsForSearchByNumberOfSoraPage params) async {
      return await repository.getNumberOfSoraPageBySearch(params.numberOfPage);
   }
 }
