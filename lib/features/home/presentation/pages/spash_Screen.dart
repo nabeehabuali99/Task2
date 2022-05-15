@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(
-        const Duration(seconds: 5),
+        const Duration(seconds:1),
         () => Navigator.of(context)
             .pushReplacementNamed(route.greateTafsserHome));
   }

@@ -7,6 +7,8 @@ import '../../../../core/Constants/SizeConfig/FontSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/IconSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/Size_Config.dart';
 import '../../../../injection_container.dart';
+import '../../../menu/presentation/pages/menu_dialog_page.dart';
+import '../../../profile/presentation/pages/profile_dialog_page.dart';
 import '../Widgets/buttons_widget.dart';
  import '../Widgets/Positioned Widgets.dart';
 import '../bloc/home_bloc.dart';
@@ -48,13 +50,17 @@ class _GreateTafsserHomeState extends State<GreateTafsserHome> {
                       showDialogFunctionPlay(context);
                     }),
                     buttonWidget(PathConstants.ayaList, () {
-                      showDialogFunctionPlay(context);
+                      showDialog(context: context, builder: (context) {
+                        return const ProfileDialog();
+                      });
                     }),
                     buttonWidget(PathConstants.settings_icon, () {
                       //  showDialogFunction('Settings ?', context);
                     }),
                     buttonWidget(PathConstants.list_icon, () {
-                      //  showDialogFunction('add mark !!', context);
+                      showDialog(context: context, builder: (context) {
+                        return const MenuDialogPage();
+                      });
                     }),
                     buttonWidget(PathConstants.bookmark_list_icon, () {
                       showDialogFunctionMarks(context);
