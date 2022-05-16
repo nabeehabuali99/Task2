@@ -10,6 +10,8 @@ class Color_Const {
   static Color blue = Colors.blue;
   static Color grey = Colors.grey;
   static Color white = Colors.white;
+  static Color whiteCustom = const Color(0xffeff5f5);
+  static Color  blueCustom = const Color(0xffccf5ff);
 
 
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_design2/core/Constants/SizeConfig/FontSizeConstants.dart';
+import 'package:task_design2/core/Constants/StringsAllProject.dart';
 
 import '../../../../core/Constants/Colors.dart';
 import '../../../../core/Constants/SizeConfig/Dimensions.dart';
@@ -34,7 +35,7 @@ class _ListSearchOrState extends State<ListSearchOrAya> {
             child:   Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                "انشاء قائمة",
+                AllStringsConstants.createList,
                 style: TextStyle(fontSize:FontSizeConstants.fontsize20, color: Color_Const.blue),
               ),
             ),

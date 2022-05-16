@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_design2/core/Constants/StringsAllProject.dart';
 
 import '../../../../core/Constants/SizeConfig/Dimensions.dart';
 import '../../../../core/Constants/SizeConfig/FontSizeConstants.dart';
@@ -35,11 +36,11 @@ class CreateListOfSearchOrAya extends StatelessWidget {
         left: SizeConfig.screenWidth! * 0.2,
         bottom: SizeConfig.screenHeight! * 0.05,
         child: Column(
-          children: const [
+          children:     [
             Center(
-              child: Text("اسم القائمة", style: TextStyle(fontSize: 18)),
+              child: Text(AllStringsConstants.listName, style: TextStyle(fontSize:FontSizeConstants.fontsize15)),
             ),
-            Center(
+            const Center(
               child: TextField(
                 keyboardType: TextInputType.text,
                 textAlign: TextAlign.center,
@@ -59,13 +60,14 @@ class CreateListOfSearchOrAya extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: const Text(
-                "الغاء",
-                style: TextStyle(fontSize: 18),
+              child: Text(
+                AllStringsConstants.cancel,
+                style: TextStyle(fontSize: FontSizeConstants.fontsize15),
               )),
           TextButton(
               onPressed: () {},
-              child: const Text("حفظ", style: TextStyle(fontSize: 18)))
+              child: Text(AllStringsConstants.save,
+                  style: TextStyle(fontSize: FontSizeConstants.fontsize15)))
         ]),
       ),
     ]));

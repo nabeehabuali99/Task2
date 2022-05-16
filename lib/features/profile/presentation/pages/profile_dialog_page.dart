@@ -5,6 +5,7 @@ import '../../../../core/Constants/SizeConfig/Dimensions.dart';
 import '../../../../core/Constants/SizeConfig/FontSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/IconSizeConstants.dart';
 import '../../../../core/Constants/SizeConfig/Size_Config.dart';
+import '../../../../core/Constants/StringsAllProject.dart';
 import '../widgets/list_search_or_aya_widget.dart';
 
 class ProfileDialog extends StatefulWidget {
@@ -61,10 +62,10 @@ class _ProfileDialogState extends State<ProfileDialog>
               unselectedLabelColor: Color_Const.grey,
               tabs: const [
                 Tab(
-                  child: Text("قوائم الايات"),
+                  child: Text(AllStringsConstants.listOfAya),
                 ),
                 Tab(
-                  child: Text("قوائم البحث"),
+                  child: Text(AllStringsConstants.listOfSearch),
                 ),
               ],
             ),
@@ -78,10 +79,10 @@ class _ProfileDialogState extends State<ProfileDialog>
               controller: tabController,
               children: const [
                 ListSearchOrAya(
-                  title: 'قائمة الايات',
+                  title: AllStringsConstants.ayaList,
                 ),
                 ListSearchOrAya(
-                  title: 'قائمة البحث',
+                  title:AllStringsConstants.searchList,
                 ),
               ],
             ),

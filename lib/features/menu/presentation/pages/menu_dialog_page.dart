@@ -21,13 +21,15 @@ class MenuDialogPage extends StatefulWidget {
 }
 
 class _MenuDialogPageState extends State<MenuDialogPage>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late TabController tabController;
+  late TabController tabController2;
 
   @override
   void initState() {
     super.initState();
     tabController = TabController(length: 2, vsync: this);
+    tabController2 = TabController(length: 4, vsync: this);
   }
 
   @override
@@ -67,10 +69,10 @@ class _MenuDialogPageState extends State<MenuDialogPage>
               unselectedLabelColor: Color_Const.grey,
               tabs: const [
                 Tab(
-                  child: Text("قائمة الاجزاء"),
+                  child: Text(AllStringsConstants.listOfJoza),
                 ),
                 Tab(
-                  child: Text("قائمة السور"),
+                  child: Text(AllStringsConstants.listOfSora),
                 ),
               ],
             ),
@@ -84,12 +86,12 @@ class _MenuDialogPageState extends State<MenuDialogPage>
               controller: tabController,
               children: const [
                 TabViewWidget(
-                  hintTextField: "ابحث في الاجزاء",
-                  textContent: 'الجزء',
+                  hintTextField: AllStringsConstants.searchAtJoza,
+                  textContent: AllStringsConstants.joza,
                 ),
                 TabViewWidget(
-                  hintTextField: "ابحث في السور",
-                  textContent: 'السورة',
+                  hintTextField: AllStringsConstants.searchAtSora,
+                  textContent: AllStringsConstants.sora,
                 ),
               ],
             ),

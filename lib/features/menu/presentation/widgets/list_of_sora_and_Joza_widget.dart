@@ -6,6 +6,7 @@ import 'package:task_design2/core/Constants/SizeConfig/IconSizeConstants.dart';
 
 import '../../../../core/Constants/My Icons.dart';
 import '../../../../core/Constants/SizeConfig/Size_Config.dart';
+import '../../../../core/Constants/StringsAllProject.dart';
 
 class TabViewWidget extends StatefulWidget {
   const TabViewWidget(
@@ -52,7 +53,7 @@ class _TabViewWidgetState extends State<TabViewWidget> {
           bottom: SizeConfig.screenHeight! * 0.05,
           child: Container(
             decoration: BoxDecoration(
-              color: const Color(0xffeff5f5),
+              color: Color_Const.whiteCustom,
               borderRadius:
                   BorderRadius.circular(DimensionsConstants.dimensions11),
             ),
@@ -97,8 +98,6 @@ class _TabViewWidgetState extends State<TabViewWidget> {
               controller: controller,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                  // contentPadding:
-                  //     EdgeInsets.all(DimensionsConstants.dimensions8),
                   prefixIcon: controller.text.isNotEmpty
                       ? IconButton(
                           icon: Icon(
@@ -130,7 +129,7 @@ class _TabViewWidgetState extends State<TabViewWidget> {
           bottom: SizeConfig.screenHeight! * 0.005,
           child: Container(
             decoration: BoxDecoration(
-              color: const Color(0xffccf5ff),
+              color: Color_Const.blueCustom,
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(DimensionsConstants.dimensions11),
                   bottomRight:
@@ -152,12 +151,12 @@ class _TabViewWidgetState extends State<TabViewWidget> {
                       hintStyle: TextStyle(
                           color: Color_Const.grey,
                           fontSize: FontSizeConstants.fontsize20),
-                      hintText: "١:٦٠٤"),
+                      hintText: AllStringsConstants.rangeNumberOfPageHint),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.all(DimensionsConstants.dimensions11),
-                child: Text(": اذهب للصفحة",
+                child: Text(AllStringsConstants.goToPage,
                     style: TextStyle(
                         color: Color_Const.black,
                         fontSize: FontSizeConstants.fontsize15,
